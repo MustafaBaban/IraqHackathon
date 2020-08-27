@@ -1,0 +1,1222 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JAPAN HACKATHON</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/japan hackathon logo-02.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/japan hackathon logo-02.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/japan hackathon logo-02.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/japan hackathon logo-02.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/japan hackathon logo-02.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/japan hackathon logo-02.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/japan hackathon logo-02.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/japan hackathon logo-02.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/japan hackathon logo-02.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/japan hackathon logo-02.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/japan hackathon logo-02.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/japan hackathon logo-02.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/japan hackathon logo-02.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/images/japan hackathon logo-02.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- favicons -->
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/forms.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom-responsive-style.css" />
+  <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="script/all-plugins.js"></script>
+  <script type="text/javascript" src="script/plugin-active.js"></script>
+  <style>
+    .each-portfolio h5 {
+      position: relative;
+      text-align: center;
+      z-index: 1000;
+      background-color: #212529;
+      height: 50px;
+      display: grid;
+      align-items: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".main-navigation" data-offset="150">
+  <div class="message m-success">
+    <i class="fa fa-times"></i>
+    <h4>Your message was sent successfully.</h2>
+      <i class="fa fa-sad"></i>
+      <h6>Thank You.</h3>
+
+  </div>
+  <div class="message m-fail">
+    <i class="fa fa-times"></i>
+    <h4>Something went wrong!</h2>
+      <i class="fa fa-tears"></i>
+      <h6>Try resubmition or contact us in the form below.</h3>
+  </div>
+  <div id="participant" class="Forms">
+    <a href="">
+      <i class="fa fa-times"></i>
+    </a>
+    <h2>Particiation form</h2>
+    <form id="participantForm" action="">
+      <div class="form-group">
+        <input type="text" required pattern="[A-Za-z]+" placeholder="First Name" name="FirstName"
+          class="form-control" />
+        <input type="text" required pattern="[A-Za-z]+" placeholder="Last Name" name="LastName" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <select name="Nationality" required id="" class="form-control">
+          <option value="" selected>Nationalitity</option>
+          <option value="Japanese">Japanese</option>
+          <option value="American">American</option>
+          <option value="Austrelian">Austrelian</option>
+          <option value="Armenian">Armenian</option>
+        </select>
+        <select name="Country" required id="" class="form-control">
+          <option value="" selected>Country of residence</option>
+          <option value="Iraq">Iraq</option>
+          <option value="American">American</option>
+          <option value="Japan">Japan</option>
+        </select>
+      </div>
+      <input type="email" required placeholder="Email" name="email" class="form-control" />
+      <br />
+      <input type="date" required placeholder="Birthday" name="DOB" class="form-control" />
+      <br />
+      <div class="form-group">
+        <label for="">Dietary Plan</label>
+        <div>
+          <label class="radio-inline" for=""></label><input type="radio" required name="DietaryPlan" value="Vegan" />
+          Vegan
+
+          <label class="radio-inline" for=""></label><input type="radio" required name="DietaryPlan" value="Halal" />
+          Halal
+
+          <label class="radio-inline" for=""></label><input type="radio" required name="DietaryPlan" value="other" />
+          Other
+        </div>
+        <br />
+      </div>
+      <textarea name="" maxlength="2000" id="diet" style="display: none; width: 100%;"></textarea>
+      <label for="">Are you ?</label>
+      <div>
+        <input type="radio" required name="Profession" value="Programmer" />
+        <label for="">Programmer</label>
+        <input type="radio" required name="Profession" value="Designer" />
+        <label for="">Designer</label>
+        <input type="radio" required name="Profession" value="Project Manager" />
+        <label for="">Project Manager</label>
+        <input type="radio" required name="Profession" value="Student" />
+        <label for="">Student</label>
+        <input type="radio" required name="Profession" value="other" />
+        <label for="">Other</label>
+        <br />
+        <br />
+        <textarea id="otherTitle" style="display: none; width: 100%;"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="">I have participated in a hackathon</label>
+        <input type="checkbox" name="Participated" />
+      </div>
+      <br />
+      <select name="source" required id="sources" class="form-control">
+        <option value="" selected>How did you hear about us ?</option>
+        <option value="Friend">Friend</option>
+        <option value="Social Media">Social Media</option>
+        <option value="Google Search">Google Search</option>
+        <option value="other">Other</option>
+      </select>
+      <br />
+      <textarea id="source" maxlength="2000" name="otherSource" style="display: none; width: 100%;"></textarea>
+      <br />
+      <input type="submit" value="Submit now" class="btn btn-primary" />
+    </form>
+  </div>
+  <div id="guest" class="Forms">
+    <a href="">
+      <i class="fa fa-times"></i>
+    </a>
+    <h2>guest form</h2>
+    <form id="guestForm">
+      <div class="form-group">
+        <input type="text" required placeholder="First Name" pattern="[A-Za-z]+" name="FirstName"
+          class="form-control" />
+
+        <input type="text" required pattern="[A-Za-z]+" placeholder="Last Name" name="LastName" class="form-control" />
+      </div>
+      <div class="form-group">
+        <select name="Nationality" required id="" class="form-control">
+          <option value="" selected>Nationalitity</option>
+          <option value="Japanese">Japanese</option>
+          <option value="American">American</option>
+          <option value="Austrelian">Austrelian</option>
+          <option value="Armenian">Armenian</option>
+        </select>
+
+        <select name="Country" id="" required class="form-control" class="form-control">
+          <option value="" selected>Country of residence</option>
+          <option value="Iraq">Iraq</option>
+          <option value="American">American</option>
+          <option value="Japan">Japan</option>
+        </select>
+      </div>
+      <input required type="email" placeholder="Email" name="email" class="form-control" />
+      <br />
+
+      <input required type="date" placeholder="Birthday" name="DOB" class="form-control" />
+      <br />
+      <div class="form-group">
+        <label for="">Dietary Plan</label>
+        <div>
+          <label class="radio-inline" for=""></label><input required type="radio" name="DietaryPlan" value="Vegan" />
+          Vegan
+
+          <label class="radio-inline" for=""></label><input required type="radio" name="DietaryPlan" value="Halal" />
+          Halal
+
+          <label class="radio-inline" for=""></label><input required type="radio" name="DietaryPlan" value="other" />
+          Other
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input required type="text" pattern="[A-Za-z]+" name="Position" placeholder="Position" class="form-control" />
+
+        <input type="text" required name="Organization" placeholder="Organization" class="form-control" />
+      </div>
+      <label for="reason">Why do you want to attend Japan Hackathon ?</label>
+      <br />
+      <textarea name="WhyAttend" required maxlength="2000" id="reason" rows="5" class="form-control"></textarea>
+      <br />
+      <select name="source" required id="gsource" class="form-control">
+        <option value="" selected>How did you hear about us ?</option>
+        <option value="Friend">Friend</option>
+        <option value="Social Media">Social Media</option>
+        <option value="Google Search">Google Search</option>
+        <option value="other">Other</option>
+      </select>
+      <br />
+      <textarea name="otherSource" maxlength="2000" id="gosource" style="display: none;width:100%"></textarea>
+      <div>
+        <fieldset>
+          <br />
+          <label>What events do you want to attend ?</label>
+          <br />
+          <label>Opening Ceremony (2000 Yen) &nbsp;</label>
+          <input type="checkbox" class="myCheckBoxes" name="OpenningCeremony" value="OpenningCeremony" />
+          Yes &nbsp;
+          <br />
+          <label>Closing Ceremony (2000 Yen) &nbsp;</label>
+          <input type="checkbox" class="myCheckBoxes" name="ClosingCeremony" value="ClosingCeremony" />
+          Yes &nbsp;
+          <br />
+          <label>All the Events (5000 Yen) &nbsp;</label>
+          <input type="checkbox" class="myCheckBoxes" name="AllEvents" value="AllEvents" />
+          Yes &nbsp;
+          <br />
+        </fieldset>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Submit now
+      </button>
+    </form>
+  </div>
+  <div id="sponser" class="Forms">
+    <a href="" id="closeSponsor">
+      <i class="fa fa-times"></i>
+    </a>
+    <h2>Sponser Information</h2>
+    <form id="sponsorForm">
+      <div class="">
+        <input type="text" class="form-control" name="CompanyName" required pattern="[A-Za-z]+"
+          placeholder="Company Name" />
+        <br />
+        <input type="email" required class="form-control" name="CompanyEmail" placeholder="Company Email" />
+        <br />
+        <input type="text" required class="form-control" name="FullName" pattern="[A-Za-z]+" placeholder="Full Name" />
+        <br />
+        <input type="text" required class="form-control" pattern="[0-9]+" name="phonenumber"
+          placeholder="Phone Number" />
+        <br />
+        <select name="country" id="" required class="form-control">
+          <option value="" selected>Select Country</option>
+          <option value="America">America</option>
+          <option value="Canada">Canada</option>
+          <option value="Japan">Japan</option>
+          <option value="Kuwait">Kuwait</option>
+        </select>
+        <br />
+        <textarea name="message" required maxlength="2000" id="" class="form-control"
+          placeholder="Tell us your message"></textarea>
+      </div>
+      <br />
+      <button type="submit" id="submitSponsor" class="btn btn-primary">
+        Submit now
+      </button>
+    </form>
+  </div>
+  <section id="MainContainer">
+    <!-- Header starts here -->
+    <header id="Header">
+      <nav class="main-navigation">
+        <div class="container clearfix">
+          <div class="site-logo-wrap">
+            <a class="logo" href="#">
+              <img src="/images/japan hackathon logo-01.png" alt="" /></a>
+          </div>
+          <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
+          <div class="main-menu hidden-md-down">
+            <ul class="menu-list">
+              <li>
+                <a class="nav-link" href="javascript:void(0)" data-target="#HeroBanner">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="javascript:void(0)" data-target="#About">About</a>
+              </li>
+              <li>
+                <a class="nav-link" href="javascript:void(0)" data-target="#Services">Prize</a>
+              </li>
+              <li>
+                <a class="nav-link" href="javascript:void(0)" data-target="#Team">Team</a>
+              </li>
+              <!-- <li class="attend">
+                                <a href="" id="drop">Attend</a>
+                                <ul class="menu-drop">
+                                    <li><a href="" class="mp">as a participant</a></li>
+                                    <li><a href="" class="mg">as a guest</a></li>
+                                </ul>
+                              </li> -->
+              <li>
+                <a class="nav-link" href="javascript:void(0)" data-target="#ContactUs">Contact</a>
+              </li>
+              <li><a class="sponser" href="#">Become a Sponser</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-menu hidden-lg-up">
+          <ul class="mobile-menu-list">
+            <li>
+              <a class="nav-link" href="javascript:void(0)" data-target="#HeroBanner">Home</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="javascript:void(0)" data-target="#About">About</a>
+            </li>
+            <li>
+              <a class="nav-link" href="javascript:void(0)" data-target="#Services">Prize</a>
+            </li>
+            <li>
+              <a class="nav-link" href="javascript:void(0)" data-target="#Team">Team</a>
+            </li>
+            <!-- <li style="color: white;
+                        text-transform: capitalize;">
+                            Attend as
+                            <ul style="margin:10px 0">
+                                <li><a href="" class="mp">a participant</a></li>
+                                <li><a href="" class="mg">a guest</a></li>
+                            </ul>
+                        </li> -->
+            <li>
+              <a class="nav-link" href="javascript:void(0)" data-target="#ContactUs">Contact</a>
+            </li>
+            <li><a class="sponser" href="#">Become a Sponser</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="HeroBanner">
+      <div class="hero-content">
+        <div class="container">
+          <h1 id="title">
+            Event starts on
+            <p>May 16th, 2020</p>
+          </h1>
+          <div class="counters">
+            <div class="counter">
+              <span id="days">NA</span>
+              <p>Days</p>
+            </div>
+
+            <div class="counter">
+              <span id="hours">NA</span>
+              <p>Hours</p>
+            </div>
+
+            <div class="counter">
+              <span id="minutes">NA</span>
+              <p>Minutes</p>
+            </div>
+
+            <div class="counter">
+              <span id="seconds">NA</span>
+              <p>Seconds</p>
+            </div>
+          </div>
+          <br />
+          <h3 class="text-uppercase text-white">Attend as</h3>
+          <a href="#" class="btn btn-light mp text-uppercase" style="border-radius: 0;">Participant</a>
+          <a href="#" class="btn btn-light mg text-uppercase" style="border-radius: 0;">Guest</a>
+        </div>
+      </div>
+    </section>
+    <section id="About">
+      <div class="container">
+        <div class="about-wrapper">
+          <h2>What is Iraq Hackathon ?</h2>
+          <p>
+            <b>Iraq Hackathon</b> is planned to be 52 hours event, and it is founded and organized by Plus the Edge
+            Company for
+            Business and Technology consultancy. Iraq Hackathon will gather all the creative individuals all over Iraq
+            and give them the opportunity to show up their ideas and get supports. It is where creative designers,
+            coders, and web developers come together to bring an innovative idea to the country and solve a problem.
+          </p>
+          <br />
+          <br />
+          <h2>Location</h2>
+          <img src="/images/location.png" alt="" style="width:70%;" />
+          <br /><br /><br />
+          <p>
+            Iraq hackathon will be an online hackathon where Plus the Edge will use all of its resources to make this
+            online hackathon happen. Plus the Edge owns the official license of Adobe Connect which is used to do
+            virtual meeting, training, and webinars. Besides that, Plus the Edge could provide licenses for any official
+            company, NGO, institute, university, schools, and government sectors.
+          </p>
+          <!-- <p>
+            Address: 619-0294 Seika-Nishikizu District, Kansai Science City.
+            <br />
+            Located in the Seika-cho, Soraku-gun, and Kizugawa-shi regions of
+            Kyoto Prefecture.
+          </p> -->
+          <a href="https://plustheedge.com" class="btn btn-primary" style="border-radius: 0;">
+            READ MORE
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Banner ends here -->
+    <!-- Services section starts here -->
+    <section id="Services">
+      <div class="container">
+        <div class="block-heading">
+          <h2>
+            The Prize is 500,000 Yen for the first place in any of the below
+            categories
+          </h2>
+        </div>
+        <div class="services-wrapper">
+          <div class="cat">
+            <h3>Health</h3>
+            <img src="/images/undraw_healthy_habit_bh5w.svg" alt="" />
+          </div>
+          <div class="cat">
+            <h3>art</h3>
+            <img src="/images/undraw_making_art_759c.svg" alt="" />
+          </div>
+          <div class="cat">
+            <h3>FinTech</h3>
+            <img src="/images/undraw_tutorial_video_7dns.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="organizers">
+      <h2>organizers</h2>
+      <div class="block">
+        <a href="http://csffco.com">
+          <img src="/images/CSFF Logo.png" alt="" /></a>
+        <a href="http://kuiec.com/"> <img src="/images/kuiec.png" alt="" /></a>
+      </div>
+      <h2>sponsers</h2>
+      <div class="block">
+        <a href="http://www.pref.kyoto.jp/en/"><img src="/images/Kyoto Prefecture Logo.png" alt="" /></a>
+        <a href="http://plustheedge.com/"><img src="/images/pelogo.png" alt="" /></a>
+        <a href="http://admedia.agency/"><img src="/images/AD.jpg" alt="" /></a>
+      </div>
+    </section>
+    <section id="Team">
+      <div class="container">
+        <div class="block-heading">
+          <h2>Meet the Team</h2>
+          <p>Leading Entrepreneurs</p>
+        </div>
+        <div class="portfolio-wrapper clearfix">
+          <a class="each-portfolio" data-fancybox="gallery" href="images/Kana.jpg">
+            <h5 class="p-title">Kana Akagi</h5>
+            <h3>Co-organizer and CSFF Founder</h3>
+            <img src="images/Kana.jpg" alt="p-one" />
+          </a>
+          <a class="each-portfolio" data-fancybox="gallery" href="images/snur.jpg">
+            <h5 class="p-title">Snur Hamind</h5>
+            <h3>Co-organizer and CSFF Founder</h3>
+            <img src="images/snur.jpg" alt="p-one" />
+          </a>
+          <a class="each-portfolio" data-fancybox="gallery" href="images/hiro.jpg">
+            <h5 class="p-title">Hiro Wada</h5>
+            <h3>Public Relations Director</h3>
+            <img src="images/hiro.jpg" alt="p-one" />
+          </a>
+
+          <a class="each-portfolio" data-fancybox="gallery" href="images/Harini.jpg">
+            <h5 class="p-title">Harini Samarasinghe</h5>
+            <h3>Finance and Budgeting Director</h3>
+            <img src="images/Harini.jpg" alt="p-one" />
+          </a>
+          <a class="each-portfolio" data-fancybox="gallery" href="images/Ulkar.jpg.jpg">
+            <h5 class="p-title">Ulkar Garajali</h5>
+            <h3>Marketing Director</h3>
+            <img src="images/Ulkar.jpg" alt="p-one" />
+          </a>
+          <a class="each-portfolio" data-fancybox="gallery" href="images/haissam.jpg">
+            <h5 class="p-title">Haissam Khan</h5>
+            <h3>Volunteers’ Supervisor</h3>
+            <img src="images/haissam.jpg" alt="p-one" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="agenda">
+      <!--for demo wrap-->
+      <h1>AGENDA</h1>
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr>
+              <th>FRIDAY</th>
+              <th>SATURDAY</th>
+              <th>SUNDAY</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr>
+              <td>10:00 AM – 11:30 AM Opening Ceremony</td>
+              <td>10:30 AM – 11:30 AM Workshop (Business Model and Value Proposition)</td>
+              <td>1:00 PM First Draft Submission</td>
+            </tr>
+            <tr>
+              <td>11:30 AM – 12:30 PM Pitching Ideas</td>
+              <td>3:00 PM – 4:00 PM Workshop</td>
+              <td>5:00 PM Second Draft Submission</td>
+            </tr>
+            <tr>
+              <td>12:30 PM – 4:00 PM Team Building</td>
+              <td>4:30 PM – 7:00 PM Mentors Time</td>
+              <td>5:00 PM – 7:00 PM Pitching Idea</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>7:15 PM Judges Discussion and announcing the winner</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>18:00 PM Press Conference </td>
+            </tr>
+
+            <tr>
+              <!-- <td>04:00 PM 05:00 PM Mentors Time</td> -->
+              <!-- <td>04:00 PM 05:00 PM Judges Discussion and announcing the winner</td> -->
+              <!-- <td>04:00 PM 05:00 PM Press Conference</td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="About">
+      <div class="container">
+        <div class="about-wrapper">
+          <h2>Evaluation Criteria</h2>
+          All groups are expected to have an idea that solves a problem in the
+          world using any kinds of technology, web applications, AI, and etc
+          in three different fields, fintech, art and healthcare. By the end
+          of 52 hours of working, participants must have a prototype of their
+          work and they will be evaluated based on the below criteria.
+          <br /><br />
+          <ul style="list-style: none;max-width:600px; margin:auto;  line-height: 35px;">
+            <li>
+              1. Theme: Natural Phenomena Disasters. Does the idea solve a
+              natural phenomenon issue directly or indirectly ?
+              <h3>
+                <span class="badge badge-warning text-white"> 3 Points</span>
+              </h3>
+            </li>
+
+            <li>
+              2. Importance of the Idea. How significant is the solution to
+              the problem that is solving?
+              <h3>
+                <span class="badge badge-warning text-white"> 5 points</span>
+              </h3>
+            </li>
+
+            <li>
+              3. Business Value. Does the idea bring value to a specific
+              market? Or solve a specific problem in a market? Does it make
+              money? Is the business model clear?
+              <h3>
+                <span class="badge badge-warning text-white">5 points </span>
+              </h3>
+            </li>
+
+            <li>
+              4. Realistic Capability. The three days aside, how realistic is
+              the technology to be put into production?
+              <h3>
+                <span class="badge badge-warning text-white"> 5 Points </span>
+              </h3>
+            </li>
+
+            <li>
+              5. Innovation and Creativity. How is the solution different from
+              the other existing technologies? Is there any elements of
+              creativity in prototype created?
+              <h3>
+                <span class="badge badge-warning text-white">5 points</span>
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section ends here -->
+    <!-- <section id="Testimonial">
+          <div class="testimonial-wrap">
+          <div class="container">
+            <div class="block-heading">
+              <h2>What Clients Say About Us</h2>
+            </div>
+            <ul class="testimonial-slider">
+              <li>" I would like to thank Click and the team for the fantastic work<br> on content writing for my site. "</li>
+              <li>" I'd say that the team is excellent and it is some of the best service<br> I have received both online and offline in a long time. "</li>
+              <li>" It's been great working with you. The content is also great. I can certainly recommend your<br> services to others as cost effective services. "</li>
+            </ul>
+          </div>
+        </div>
+        </section> -->
+    <!-- Contact us section starts here -->
+    <section id="ContactUs">
+      <div class="container contact-container">
+        <h3 class="contact-title">Get In Touch</h3>
+        <div class="contact-outer-wrapper">
+          <div class="form-wrap">
+            <p class="add-title">Send Us Message</p>
+            <form id="contactForm">
+              <div class="fname floating-label">
+                <input type="text" required pattern="[A-Za-z]+" class="floating-input" name="Fullname"
+                  id="full-name-field" />
+                <label for="full-name-field">Full Name</label>
+              </div>
+              <div class="email floating-label">
+                <input type="email" required class="floating-input" name="email" id="mail-field" />
+                <label for="mail-field">Email</label>
+              </div>
+              <div class="contact floating-label">
+                <input type="tel" required class="floating-input" pattern="[A-Za-z]+" name="Subject"
+                  id="contact-us-field" />
+                <label for="contact-us-field">Email Subject</label>
+              </div>
+              <div class="company floating-label">
+                <input type="text" required class="floating-input" name="Company" id="company-field" />
+                <label for="company-field">Company</label>
+              </div>
+              <div class="user-msg floating-label">
+                <textarea class="floating-input" required maxlength="2000" name="message"
+                  id="user-msg-field"></textarea>
+                <label for="user-msg-field" class="msg-label">Your Message</label>
+              </div>
+              <div class="submit-btn">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section">
+      <div class="container">
+        <div class="row">
+          <!-- ***** FAQ Start ***** -->
+          <div class="col-md-6 offset-md-3">
+            <div class="faq-title text-center pb-3">
+              <h2>FAQ</h2>
+            </div>
+          </div>
+          <div class="col-md-6 offset-md-3">
+            <div class="faq" id="accordion">
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-1">
+                      <span class="badge">1</span>If I need some items for my
+                      project, can you provide them?
+                    </h5>
+                  </div>
+                </div>
+                <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      No, you have to bring your own laptop or any other items
+                      like (microcontroller) that you think you will need
+                      them. Only electric extensions will be provided.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-2">
+                      <span class="badge">2</span>Can I sleep during my three
+                      day stay?
+                    </h5>
+                  </div>
+                </div>
+                <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      You can take rest or sleep, however no accommodation is
+                      provided. If you would like to sleep, you can bring your
+                      sleeping bag or some couches are available at the venue
+                      that you can use.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-3">
+                      <span class="badge">3</span>Do I have to pay for
+                      attending the event?
+                    </h5>
+                  </div>
+                </div>
+                <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      If you have an idea or you want to join a group to work
+                      on an idea, you should register as a participant, which
+                      is free of charge. While if you would like to attend the
+                      event as a guest to witness the event for opening and
+                      closing ceremony or full event days packages are
+                      available.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-4">
+                      <span class="badge">4</span>How can I apply to be a
+                      volunteer?
+                    </h5>
+                  </div>
+                </div>
+                <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Email us at career@csffco.com with the email subject
+                      “Hackathon Volunteering”
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-5">
+                      <span class="badge">5</span>I live outside of Japan, can
+                      I still apply?
+                    </h5>
+                  </div>
+                </div>
+                <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Yes, you can. The event is international and everyone
+                      can attend.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-6">
+                      <span class="badge">6</span>Do you pay for my airfare
+                      tickets and visa?
+                    </h5>
+                  </div>
+                </div>
+                <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      No, you have to cover the fees for both airplane tickets
+                      and visa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-7">
+                      <span class="badge">7</span>What is the language of the
+                      event?
+                    </h5>
+                  </div>
+                </div>
+                <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>English is the official language of the event.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-8" data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-8">
+                      <span class="badge">8</span>Do you provide
+                      accommodations?
+                    </h5>
+                  </div>
+                </div>
+                <div id="faqCollapse-8" class="collapse" aria-labelledby="faqHeading-8" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      we don't provide any accommodations. While the venue is
+                      open for the three days of the event and you can stay
+                      there during day and night time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact us section ends here -->
+    <!-- Footer section starts here -->
+    <footer id="Footer">
+      <div class="container">
+        <div class="social-share">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-logo-wrap">
+          Developed by
+          <a href="http://www.plustheedge.com/">Plus the Edge</a> Company
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section ends here -->
+  </section>
+  <script>
+    // Set the countdown date
+    var countDownDate = new Date("May 16, 2020 16:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get the current time
+      var now = new Date().getTime();
+
+      // Find the distance between current time and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // website design ever made
+      // Display the result in the corresponding elements
+      document.getElementById("days").innerHTML =
+        days < 10 ? "0" + days : days;
+      document.getElementById("hours").innerHTML =
+        hours < 10 ? "0" + hours : hours;
+      document.getElementById("minutes").innerHTML =
+        minutes < 10 ? "0" + minutes : minutes;
+      document.getElementById("seconds").innerHTML =
+        seconds < 10 ? "0" + seconds : seconds;
+
+      // If the count down is finished display Happy New Year text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("title").innerHTML =
+          "Happy New Year<p>2021</p>";
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+      }
+    }, 1000);
+    $(window)
+      .on("load resize ", function () {
+        var scrollWidth =
+          $(".tbl-content").width() - $(".tbl-content table").width();
+        $(".tbl-header").css({ "padding-right": scrollWidth });
+      })
+      .resize();
+  </script>
+</body>
+<script>
+  const isRadio = element => {
+    return !["radio"].includes(element.type) || element.checked;
+  };
+  const isCheckbox = element => element.type === "checkbox";
+
+  $("#contactForm").submit(function () {
+    var form = $("#contactForm");
+
+    const formToJSON = elements =>
+      [].reduce.call(
+        elements,
+        (data, element) => {
+          data[element.name] = element.value;
+          return data;
+        },
+        {}
+      );
+    var formData = formToJSON(form[0].elements);
+    formData = JSON.stringify(formData);
+    console.log(JSON.stringify(formData));
+    $.ajax({
+      type: "POST",
+      url: "http://jhackathon2020-001-site1.htempurl.com/email/contact",
+      data: formData,
+      success: function () {
+        $("#sponser").removeClass("active");
+
+        $(".m-success").addClass("active");
+
+      },
+      error: function () {
+
+        $(".m-fail").addClass("active");
+
+      },
+      dataType: "json",
+      contentType: "application/json",
+      crossDomain: true
+    });
+    return false;
+  });
+
+  $("#sponsorForm").submit(function () {
+    var form = $("#sponsorForm");
+    // $(".m-success").removeClass("active");
+    // $(".tab").addClass("active"); // instead of this do the below 
+    const formToJSON = elements =>
+      [].reduce.call(
+        elements,
+        (data, element) => {
+          data[element.name] = element.value;
+          return data;
+        },
+        {}
+      );
+    var formData = formToJSON(form[0].elements);
+    formData = JSON.stringify(formData);
+    console.log(JSON.stringify(formData));
+    $.ajax({
+      type: "POST",
+      url: "http://jhackathon2020-001-site1.htempurl.com/email/sponser",
+      data: formData,
+      success: function () {
+        $("#sponser").removeClass("active");
+        $(".m-success").addClass("active");
+      },
+
+      error: function () {
+
+        $(".m-fail").addClass("active");
+
+      },
+      dataType: "json",
+      contentType: "application/json",
+      crossDomain: true
+    });
+
+    return false;
+  });
+
+  $("#guestForm").submit(function () {
+    var form = $("#guestForm");
+    var checkBoxes = document.getElementsByClassName('myCheckBoxes');
+    var isChecked = false;
+    for (var i = 0; i < checkBoxes.length; i++) {
+      if (checkBoxes[i].checked) {
+        isChecked = true;
+      };
+    };
+    if (isChecked) {
+
+      const formToJSON = elements =>
+        [].reduce.call(
+          elements,
+          (data, element) => {
+            if (isCheckbox(element)) {
+              data[element.name] = element.checked.toString();
+              console.log(data[element.name]);
+            } else if (element.type == "radio") {
+              if (element.checked == true) {
+                data[element.name] = element.value;
+              }
+            } else {
+              data[element.name] = element.value;
+            }
+            return data;
+          },
+          {}
+        );
+      var formData = formToJSON(form[0].elements);
+      formData = JSON.stringify(formData);
+      console.log(JSON.stringify(formData));
+      $.ajax({
+        type: "POST",
+        url: "http://jhackathon2020-001-site1.htempurl.com/email/guest",
+        data: formData,
+        success: function () {
+          $("#guest").removeClass("active");
+          $(".m-success").addClass("active");
+
+          console.log("success");
+        },
+        error: function () {
+          $(".m-fail").addClass("active");
+        },
+        dataType: "json",
+        contentType: "application/json",
+        crossDomain: true
+      });
+
+    } else {
+      alert('Please, check at least one checkbox!');
+    }
+
+    return false;
+  });
+
+  $("#participantForm").submit(function () {
+    var form = $("#participantForm");
+
+    const formToJSON = elements =>
+      [].reduce.call(
+        elements,
+        (data, element) => {
+          if (isCheckbox(element)) {
+            data[element.name] = element.checked;
+            console.log(data[element.name]);
+          } else if (element.type == "radio") {
+            if (element.checked == true) {
+              data[element.name] = element.value;
+            }
+          } else {
+            data[element.name] = element.value;
+          }
+          return data;
+        },
+        {}
+      );
+    var formData = formToJSON(form[0].elements);
+    formData = JSON.stringify(formData);
+    console.log(JSON.stringify(formData));
+    $.ajax({
+      type: "POST",
+      url: "http://jhackathon2020-001-site1.htempurl.com/email/participant",
+      data: formData,
+      success: function () {
+        $("#participant").removeClass("active");
+        $(".m-success").addClass("active");
+
+      },
+      error: function () {
+
+        $(".m-fail").addClass("active");
+
+      },
+      dataType: "json",
+      contentType: "application/json",
+      crossDomain: true
+    });
+    return false;
+  });
+
+  // $("#submitSponsor").click(function(e) {
+  //   e.preventDefault();
+  //   console.log(e);
+  //   var form = $("#sponsorForm");
+
+  //   //   const formToJSON = elements =>
+  //   //     [].reduce.call(
+  //   //       elements,
+  //   //       (data, element) => {
+  //   //         data[element.name] = element.value;
+  //   //         return data;
+  //   //       },
+  //   //       {}
+  //   //     );
+  //   //   var formData = formToJSON(form[0].elements);
+  //   //   formData = JSON.stringify(formData);
+  //   //   console.log(JSON.stringify(formData));
+  //   //   $.ajax({
+  //   //     type: "POST",
+  //   //     url: "http://jhackathon2020-001-site1.htempurl.com/email/sponser",
+  //   //     data: formData,
+  //   //     success: function() {
+  //   //       $("#sponser").removeClass("active");
+
+  //   //       console.log("success");
+  //   //     },
+  //   //     dataType: "json",
+  //   //     contentType: "application/json"
+  //   //   });
+  // });
+
+  $(document).ready(function () {
+    function changeBody(el) {
+      $("body").css("overflow", "hidden");
+      $(el).css("overflow-y", "scroll");
+    }
+    function fixBody(el) {
+      $("body").css("overflow", "auto");
+      $(el).css("overflow-y", "auto");
+    }
+    $(".mp").click(function (e) {
+      e.preventDefault();
+
+      $("#participant").addClass("active");
+      $(".menu-drop").slideUp();
+      changeBody("#participant");
+    });
+    $(".sponser").click(function (e) {
+      e.preventDefault();
+
+      $("#sponser").addClass("active");
+      changeBody("#sponser");
+    });
+    $(".mg").click(function (e) {
+      e.preventDefault();
+      $("#guest").addClass("active");
+      changeBody("#guest");
+      $(".menu-drop").slideUp();
+    });
+    //
+    $("#guest a").click(function (e) {
+      e.preventDefault();
+      fixBody("#guest");
+      $("#guest").removeClass("active");
+    });
+    $("#sponser a").click(function (e) {
+      e.preventDefault();
+      fixBody("#sponser");
+      $("#sponser").removeClass("active");
+    });
+    $("#participant a").click(function (e) {
+      e.preventDefault();
+      fixBody("#participant");
+      $("#participant").removeClass("active");
+    });
+
+    $("#drop").click(function (e) {
+      e.preventDefault();
+      $(".menu-drop").slideToggle();
+    });
+  });
+
+  setTimeout(() => {
+    $("input[type='radio'][name='profession']").click(function () {
+      if ($(this).attr("value") === "other") {
+        $("#otherTitle").show();
+      } else {
+        $("#otherTitle").hide();
+      }
+    });
+  }, 100);
+  setTimeout(() => {
+    $("input[type='radio'][name='diet']").click(function () {
+      if ($(this).attr("value") === "other") {
+        $("#diet").show();
+      } else {
+        $("#diet").hide();
+      }
+    });
+  }, 100);
+  setTimeout(() => {
+    $("input[type='radio'][name='gdiet']").click(function () {
+      if ($(this).attr("value") === "other") {
+        $("#gdother").show();
+      } else {
+        $("#gdother").hide();
+      }
+    });
+  }, 100);
+  $("#sources").change(function () {
+    if (
+      $(this)
+        .children("option:selected")
+        .val() === "other"
+    ) {
+      $("#source").show();
+    } else {
+      $("#source").hide();
+    }
+  });
+  $("#gsource").change(function () {
+    if (
+      $(this)
+        .children("option:selected")
+        .val() === "other"
+    ) {
+      $("#gosource").show();
+    } else {
+      $("#gosource").hide();
+    }
+  });
+  $(".message .fa-times").click(function () {
+    $(this).parent().removeClass("active");
+  });
+</script>
+
+</html>
